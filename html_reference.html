@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 35%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 80%;
+    border-left: none;
+    height: 300px;
+}
+</style>
+<h2>
+HTML Reference
+</h2>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"> &lt; !DOCTYPE html &gt; </button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">&lt;!--...--&gt; </button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">&lt; a &gt;</button>
+</div>
+
+<div id="&lt; !DOCTYPE html &gt; " class="tabcontent">
+  <h3>&lt; !DOCTYPE html &gt;</h3>
+  <p>
+  	 It defines the document type<br>
+      The DTD specifies the rules for the markup language, so that the browsers render the content correctly.
+<br>
+<b>Tip</b>: Always add the &lt;!DOCTYPE&gt; declaration to your HTML documents, so that the browser knows what type of document to expect.
+     <br>
+     For example:<br>
+     &lt;!DOCTYPE html&gt; <br>    
+         &lt;html&gt;
+       
+  </p>
+</div>
+
+<div id="&lt;!--...--&gt;" class="tabcontent">
+  <h3>&lt;!--...--&gt;</h3>
+  <p>Defines a comment
+  <br> 
+  The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
+  <br>
+  <br>
+  For Example:
+  <br>
+    &lt;!--This is a comment. Comments are not displayed in the browser--&gt;
+&lt;This is a paragraph.&gt;
+</div>
+
+  
+
+<div id="&lt; a &gt;" class="tabcontent">
+  <h3>&lt; a &gt;</h3>
+  <p>It defines a hyperlink.<br>
+  The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.
+<br>
+For Example: &lt;a href="https://www.w3schools.com">Visit W3Schools.com! &gt;
+</div>
+
+<div id="&lt; abbr &gt; " class="tabcontent">
+  <h3>&lt; abbr&gt;</h3>
+  <p>
+  	 Defines an abbreviation or an acronym
+<br>
+The &lt;abbr&gt; tag defines an abbreviation or an acronym, like "Mr.", "Dec.", "ASAP", "ATM".
+
+<b>Tip</b>:An abbreviation and an acronym are both shortened versions of something else. Both are often represented as a series of letters .
+     <br>
+     For example:The &lt;abbr title="World Health Organization">WHO &lt;abbr &gt; was founded in 1948.
+
+       
+  </p>
+</div>
+
+<div id="&lt; b &gt; " class="tabcontent">
+  <h3>&lt; b &gt;</h3>
+  <p>
+  	 It defines bold text
+<br>
+     For example:&lt;p>This is normal text - &lt;b>and this is bold text&lt;/b &gt;.&lt;/p&gt;
+       
+  </p>
+</div>
+
+
+
+<div id="&lt; div &gt; " class="tabcontent">
+  <h3>&lt; div&gt;</h3>
+  <p>
+  	 Defines a section in a document
+<br>
+The &lt;div&gt; tag defines a division or a section in an HTML document.
+<br>
+    div style="background-color:lightblue">
+  <h3>This is a heading</h3>
+  <p>This is a paragraph.</p>
+</div>
+       
+  </p>
+</div>
+
+</head>
+</html>
