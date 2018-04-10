@@ -1,143 +1,341 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
 
-/* Style the tab */
-.tab {
-    float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 35%;
-    height: 300px;
-}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box
+      }
 
-/* Style the buttons inside the tab */
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-}
+      body {
+        font-family: "Lato", sans-serif;
+      }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
+      /* Style the tab */
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-    background-color: #ccc;
-}
+      .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 35%;
+        height: 300px;
+      }
 
-/* Style the tab content */
-.tabcontent {
-    float: left;
-    padding: 0px 12px;
-    border: 1px solid #ccc;
-    width: 80%;
-    border-left: none;
-    height: 300px;
-}
-</style>
-<h2>
-HTML Reference
-</h2>
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"> &lt; !DOCTYPE html &gt; </button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">&lt;!--...--&gt; </button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">&lt; a &gt;</button>
-</div>
+      /* Style the buttons inside the tab */
 
-<div id="&lt; !DOCTYPE html &gt; " class="tabcontent">
-  <h3>&lt; !DOCTYPE html &gt;</h3>
-  <p>
-  	 It defines the document type<br>
-      The DTD specifies the rules for the markup language, so that the browsers render the content correctly.
-<br>
-<b>Tip</b>: Always add the &lt;!DOCTYPE&gt; declaration to your HTML documents, so that the browser knows what type of document to expect.
-     <br>
-     For example:<br>
-     &lt;!DOCTYPE html&gt; <br>    
-         &lt;html&gt;
-       
-  </p>
-</div>
+      .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+      }
 
-<div id="&lt;!--...--&gt;" class="tabcontent">
-  <h3>&lt;!--...--&gt;</h3>
-  <p>Defines a comment
-  <br> 
-  The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
+      /* Change background color of buttons on hover */
+
+      .tab button:hover {
+        background-color: #ddd;
+      }
+
+      /* Create an active/current "tab button" class */
+
+      .tab button.active {
+        background-color: #ccc;
+      }
+
+      /* Style the tab content */
+
+      .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid #ccc;
+        width: 80%;
+        border-left: none;
+        height: 400px;
+      }
+
+    </style>
+    <h2>
+      HTML Reference
+    </h2>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"> &lt; !DOCTYPE html &gt; </button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">&lt;!--...--&gt; </button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">&lt; a &gt;</button>
+    </div>
+
+    <div id="&lt; !DOCTYPE html &gt; " class="tabcontent">
+      <h3>&lt; !DOCTYPE html &gt;</h3>
+      <p>
+        It defines the document type<br> The DTD specifies the rules for the markup language, so that the browsers render the content correctly.
+        <br>
+        <b>Tip</b>: Always add the &lt;!DOCTYPE&gt; declaration to your HTML documents, so that the browser knows what type of document to expect.
+        <br> For example:<br> &lt;!DOCTYPE html&gt; <br> &lt;html&gt;
+
+      </p>
+    </div>
+
+    <div id="&lt;!--...--&gt;" class="tabcontent">
+      <h3>&lt;!--...--&gt;</h3>
+      <p>Defines a comment
+        <br> The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
+        <br>
+        <br> For Example:
+        <br> &lt;!--This is a comment. Comments are not displayed in the browser--&gt; &lt;This is a paragraph.&gt;
+    </div>
+
+
+
+    <div id="&lt; a &gt;" class="tabcontent">
+      <h3>&lt; a &gt;</h3>
+      <p>It defines a hyperlink.<br> The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.
+        <br> For Example: &lt;a href="https://www.w3schools.com">Visit W3Schools.com! &gt;
+    </div>
+
+    <div id="&lt; abbr &gt; " class="tabcontent">
+      <h3>&lt; abbr&gt;</h3>
+      <p>
+        Defines an abbreviation or an acronym
+        <br> The &lt;abbr&gt; tag defines an abbreviation or an acronym, like "Mr.", "Dec.", "ASAP", "ATM".
+
+        <b>Tip</b>:An abbreviation and an acronym are both shortened versions of something else. Both are often represented as a series of letters .
+        <br> For example:The &lt;abbr title="World Health Organization">WHO &lt;abbr &gt; was founded in 1948.
+
+
+      </p>
+    </div>
+
+    <div id="&lt; b &gt; " class="tabcontent">
+      <h3>&lt; b &gt;</h3>
+      <p>
+        It defines bold text
+        <br> For example:&lt;p>This is normal text - &lt;b>and this is bold text&lt;/b &gt;.&lt;/p&gt;
+
+      </p>
+    </div>
+
+
+
+    <div id="&lt; footer &gt; " class="tabcontent">
+      <h3>&lt; Footer &gt;</h3>
+      <p>
+        It defines a footer for a document or section<br> A &lt;footer&gt; element typically contains:
+<ul>
+<li>authorship information</li>
+<li>copyright information</li>
+<li>contact information</li>
+<li>sitemap</li>
+<li>back to top links</li>
+<li>related documents</li>
+         For example:<br> &lt;footer&gt; <br>  &lt;p>Posted by: Hege Refsnes &lt;/p &gt;
+  &lt;p>Contact information:<br> &lt;a href="mailto:someone@example.com">
+  someone@example.com&lt;/a &gt; &lt;/p>
   <br>
-  <br>
-  For Example:
-  <br>
-    &lt;!--This is a comment. Comments are not displayed in the browser--&gt;
-&lt;This is a paragraph.&gt;
-</div>
-
-  
-
-<div id="&lt; a &gt;" class="tabcontent">
-  <h3>&lt; a &gt;</h3>
-  <p>It defines a hyperlink.<br>
-  The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.
+&lt;/footer&gt;
 <br>
-For Example: &lt;a href="https://www.w3schools.com">Visit W3Schools.com! &gt;
-</div>
-
-<div id="&lt; abbr &gt; " class="tabcontent">
-  <h3>&lt; abbr&gt;</h3>
-  <p>
-  	 Defines an abbreviation or an acronym
-<br>
-The &lt;abbr&gt; tag defines an abbreviation or an acronym, like "Mr.", "Dec.", "ASAP", "ATM".
-
-<b>Tip</b>:An abbreviation and an acronym are both shortened versions of something else. Both are often represented as a series of letters .
-     <br>
-     For example:The &lt;abbr title="World Health Organization">WHO &lt;abbr &gt; was founded in 1948.
-
+    &lt;/div&gt;
+    </div>
+    
+    
+    
+    <div id="&lt; head &gt; " class="tabcontent">
+      <h3>&lt; head &gt;</h3>
+      <p>
+       Defines information about the document <br>
+       The following elements can go inside the &lt;head> element:
+       <ul>
        
-  </p>
-</div>
-
-<div id="&lt; b &gt; " class="tabcontent">
-  <h3>&lt; b &gt;</h3>
-  <p>
-  	 It defines bold text
+<li>&lt;title></li> (this element is required in an HTML document)
+<li>&lt;style></li>
+<li>base></li>
+<li>&lt;link>&gt;
+<li>&lt;meta>&gt;
+<li>&lt;script>&gt;
+<li>&lt;noscript>&gt;
+      </p>
+    </div>
+    
+     <div id="&lt; header &gt; " class="tabcontent">
+      <h3>&lt; header &gt;</h3>
+      <p>
+       It defines a header for a document or section &lt;br>
+       A &lt;header> element typically contains:
+<ul>
+<li>one or more heading elements (&lt;h1> - &lt;h6>)</li>
+<li>logo or icon</li>
+<li>authorship information</li>
+      
+      </p>
+    </div>
+    
+    <div id="&lt; img &gt; " class="tabcontent">
+      <h3>&lt; img &gt;</h3>
+      <p>
+       It defines a image &lt; <br>
+       The &lt;img> tag defines an image in an HTML page.
 <br>
-     For example:&lt;p>This is normal text - &lt;b>and this is bold text&lt;/b &gt;.&lt;/p&gt;
-       
-  </p>
-</div>
-
-
-
-<div id="&lt; div &gt; " class="tabcontent">
-  <h3>&lt; div&gt;</h3>
-  <p>
-  	 Defines a section in a document
+The &lt;img> tag has two required attributes: src and alt.
 <br>
-The &lt;div&gt; tag defines a division or a section in an HTML document.
+<b>Note</b>: Images are not technically inserted into an HTML page, images are linked to HTML pages. The &lt;img> tag creates a holding space for the referenced image.
 <br>
-    div style="background-color:lightblue">
-  <h3>This is a heading</h3>
-  <p>This is a paragraph.</p>
-</div>
-       
-  </p>
-</div>
+<b>Tip:</b> To link an image to another document, simply nest the &lt;img> tag inside &lt;a> tags. 
+ 
+      </p>
+    </div>
+    
+    
+    <div id="&lt;li &gt; " class="tabcontent">
+      <h3>&lt; li  &gt;</h3>
+      <p>
+       It defines a list item  <br>
+       The &lt;li> tag defines a list item.
+<br>
+The &lt;li> tag is used in ordered lists(&lt;ol>), unordered lists (&lt;ul>), and in menu lists (&lt;menu>).
+<br>
+For Example:<br>
+&lt;ol><br>
+  &lt;li>Coffee&lt;/li><br>
+  &lt;li>Tea&lt;/li><br>
+  &lt;li>Milk&lt;/li><br>
+&lt;/ol><br>
+<br>
+&lt;ul><br>
+  &lt;li>Coffee&lt;/li><br>
+  &lt;li>Tea&lt;/li><br>
+  &lt;li>Milk&lt;/li><br>
+&lt;/ul>
 
-</head>
+
+      </p>
+    </div>
+    
+    
+    <div id="&lt; meta&gt; " class="tabcontent">
+      <h3>&lt; meta  &gt;</h3>
+      <p>
+       Defines metadata about an HTML document <br>
+       Metadata is data (information) about data. <br>
+The &lt;meta> tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.
+<br>
+Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
+<br>
+The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services.
+<br>
+
+
+
+      </p>
+    </div>
+    
+    
+    <div id="&lt;p &gt; " class="tabcontent">
+      <h3>&lt; p  &gt;</h3>
+      <p>
+       Defines a paragraph <br>
+       The &lt;p> tag defines a paragraph.
+
+Browsers automatically add some space (margin) before and after each &lt;p> element. The margins can be modified with CSS (with the margin properties).
+<br>
+<br>
+For Example:
+<br>
+&lt;p>This is some text in a paragraph.&lt;/p>
+
+
+      </p>
+    </div>
+    
+    
+    <div id="&lt; style &gt; " class="tabcontent">
+      <h3>&lt; style  &gt;</h3>
+      <p>
+       Defines style information for a document<br>
+      The &lt;style> tag is used to define style information for an HTML document.
+<br>
+Inside the &lt;tyle> element you specify how HTML elements should render in a browser.
+
+For Example:
+<br>
+&lt;html> <br>
+&lt;head><br>
+&lt;style><br>
+h1 {color:red;}<br>
+p {color:blue;}<br>
+&lt;/style><br>
+&lt;/head><br>
+&lt;body><br>
+<br>
+&lt;h1>A heading&lt;/h1><br>
+&lt;p>A paragraph.&lt;/p><br>
+<br>
+&lt;/body><br>
+&lt;/html><br>
+
+      </p>
+    </div>
+    
+    <div id="&lt; ul &gt; " class="tabcontent">
+      <h3>&lt; ul &gt;</h3>
+      <p>
+       Defines an unordered list <br>
+      The &lt;u> tag represents some text that should be stylistically different from normal text, such as misspelled words or proper nouns in Chinese.
+      </p>
+    </div>
+    
+    <div id="&lt; ul &gt; " class="tabcontent">
+      <h3>&lt; ul &gt;</h3>
+      <p>
+       Defines an unordered list <br>
+      The &lt;ul> tag defines an unordered (bulleted) list.
+<br>
+Use the &lt;ul> tag together with the &lt;li> tag to create unordered lists.
+<br>
+For Example:
+<br>
+&lt;ul><br>
+  &lt;li>Coffee&lt;/li><br>
+  &lt;li>Tea&lt;/li><br>
+  &lt;li>Milk&lt;/li><br>
+&lt;/ul><br>
+
+      </p>
+    </div>
+
+ <div id="&lt; sub &gt; " class="tabcontent">
+      <h3>&lt; sub &gt;</h3>
+      <p>
+       Defines subscripted text <br>
+      The &lt;sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O.
+
+Tip: Use the &lt;sup> tag to define superscripted text.
+<br>
+Use the &lt;ul> tag together with the &lt;li> tag to create unordered lists.
+<br>
+For Example:
+<br>
+&lt;ul><br>
+  &lt;li>Coffee&lt;/li><br>
+  &lt;li>Tea&lt;/li><br>
+  &lt;li>Milk&lt;/li><br>
+&lt;/ul><br>
+
+      </p>
+    </div>
+
+
+
+    
+    
+
+
+
+  </head>
+
 </html>
