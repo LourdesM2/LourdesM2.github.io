@@ -66,7 +66,7 @@
       HTML Reference
     </h2>
     <div class="tab">
-      <button class="tablinks" onclick="tagName(tag, '!DOCTYPE html')" id="defaultOpen"> &lt; !DOCTYPE html &gt; </button>
+      <button class="tablinks" onclick="tagHTML(tag, '!DOCTYPE html')" id="defaultOpen"> &lt; !DOCTYPE html &gt; </button>
       <button class="tablinks" onclick="openCity(event, 'Paris')">&lt;!--...--&gt; </button>
       <button class="tablinks" onclick="openCity(event, 'Tokyo')">&lt; a &gt;</button>
       <button class="tablinks" onclick="openCity(event, 'Tokyo')">&lt; abbr  &gt;</button>
@@ -268,7 +268,7 @@
       </p>
     </div>
 
-    
+
 
     <div id="&lt; ul &gt; " class="tabcontent">
       <h3>&lt; ul &gt;</h3>
@@ -332,8 +332,8 @@
       <p>
         It defines a section that is quoted from another source
         <br> Browsers usually indent &lt;blockquote> elements.
-        <br> For Example: <br>
-        &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"> For 50 years, WWF has been protecting the future of nature. <br> The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.<br> &lt;/blockquote>
+        <br> For Example: <br> &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"> For 50 years, WWF has been protecting the future of nature. <br> The world's leading conservation organization, WWF works in 100 countries and is supported
+        by 1.2 million members in the United States and close to 5 million globally.<br> &lt;/blockquote>
       </p>
     </div>
 
@@ -341,54 +341,44 @@
     <div id="&lt;iframe &gt; " class="tabcontent">
       <h3>&lt; iframe &gt;</h3>
       <p>
-       An inline frame is used to embed another document within the current HTML document.
-<br> 
-For Example:
-<br>
-&lt;iframe src="https://www.w3schools.com"><br>
-&lt;/iframe>
-</p>
-<div>
-   
-    <div id="&lt;input &gt; " class="tabcontent">
-      <h3>&lt; input &gt;</h3>
-      <p>
-       Defines an input control
-       <br>
-       &lt;input> elements are used within a &lt;form> element to declare input controls that allow users to input data.
-<br>
-An input field can vary in many ways, depending on the type attribute.
-<br> 
-For Example:
-<br>
-&lt;form action="/action_page.php">
-  First name: &lt;input type="text" name="fname">&lt;br>
-  Last name: &lt;input type="text" name="lname">&lt;br>
-  &lt;input type="submit" value="Submit">
-&lt;/form>
+        An inline frame is used to embed another document within the current HTML document.
+        <br> For Example:
+        <br> &lt;iframe src="https://www.w3schools.com"><br> &lt;/iframe>
       </p>
-    </div>
+      <div>
+
+        <div id="&lt;input &gt; " class="tabcontent">
+          <h3>&lt; input &gt;</h3>
+          <p>
+            Defines an input control
+            <br> &lt;input> elements are used within a &lt;form> element to declare input controls that allow users to input data.
+            <br> An input field can vary in many ways, depending on the type attribute.
+            <br> For Example:
+            <br> &lt;form action="/action_page.php"> First name: &lt;input type="text" name="fname">&lt;br> Last name: &lt;input type="text" name="lname">&lt;br> &lt;input type="submit" value="Submit"> &lt;/form>
+          </p>
+        </div>
 
 
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+        <script>
+          function tagHTML(tag, Name) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-     
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+
+        </script>
+
 
 
 
@@ -398,3 +388,4 @@ document.getElementById("defaultOpen").click();
   </head>
 
 </html>
+
