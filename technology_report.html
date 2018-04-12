@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+
+      .header h2 {
+        text-align: center;
+      }
+
+      .image {
+        opacity: 1;
+        display: block;
+        width: 70%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+
+      .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+      }
+
+      .progress-bar {
+        height: 8px;
+        background: #4caf50;
+        width: 0%;
+      }
+
+      .content {
+        padding: 100px 0;
+        margin: 50px auto 0 auto;
+        width: 80%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="header">
+
+      <h2>Technology Report</h2>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <img src="https://i.kinja-img.com/gawker-media/image/upload/c_scale,fl_progressive,q_80,w_800/ua6jlp6ob8uq1z9b7aon.jpg" class="image" style="width:70%">
+
+      <h3>Smartwatches as medical devices </h3>
+      <p>The Apple Watch might be the most boring thing that Apple has ever made, but the grand plan for it, and smartwatches, in general, isn’t boring at all.<br>
+        <p>2017 was the year that the Apple Watch got good, and it was also the year that the FDA approved the first medical device accessory.<br> The Kardiaband is an add-on that can detect an abnormal heart rate. <br> What’s more, a UCSF study found that
+          Apple’s built-in heart monitor could detect an abnormal heart rate with 97 percent accuracy when an AI-based algorithm called DeepHeart was used in conjunction with the device.<br> The same team behind that study later found that the Apple Watch-DeepHeart
+          combo could detect sleep apnea with 90 percent accuracy, and hypertension with 82 percent accuracy.<br> Both of those conditions are quite a chore to detect with the current methods.</p>
+        <p>
+          The target market of the technology are the once who are conscoius for their health. Particularly the old ones who wants to manage and somehow know what is happening to their bodies.
+        </p>
+        <p>
+          It’s still early in the quest to make a smartwatch a magical medical wizard that brings a silver bullet to preventative medicine, but we’re getting there.
+          <br> Don’t get too excited:<br> Privacy issues abound, and we’re going to have to work them out before this technology matures, not after.
+        </p>
+
+        <p>
+          In my own opinion, a smartwatch used as a medical device is a very useful technology especially for the adults.<br> It is handy and is not a hassle so everyone won't have any issue on bringing and having to detect their health. There might be
+          some technology issue but the fact that it will be better as time goes, it is not reallty that of a big problem.<br> What's important for me is that it can help the people who really need it and as long as it does what it is supposed to do,
+          then everything is alright.
+
+    </div>
+
+
+    <script>
+      // When the user scrolls the page, execute myFunction window.onscroll = function() { myFunction() }; function myFunction()
+      {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+
+    </script>
+
+  </body>
+
+</html>
